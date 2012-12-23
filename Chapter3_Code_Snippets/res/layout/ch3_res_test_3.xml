@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/standard_border"
+    >
+    <EditText
+      android:id="@+id/myEditText"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content" 
+      android:text="@string/stop_message"
+      android:textColor="@color/opaque_blue"
+    />
+    <EditText
+    android:id="@+id/myEditText2"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/stop_message"
+    android:textColor="?android:textColor"/>
+    <EditText
+    android:id="@+id/myEditText3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@android:string/httpErrorBadUrl"
+    android:textColor="@android:color/darker_gray"
+/>
+     
+</LinearLayout>

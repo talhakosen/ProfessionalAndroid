@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.paad.chapter3manifest">
+
+  <application android:icon="@drawable/icon"
+               android:theme="@style/my_theme">
+
+    <activity android:name=".MyActivity" 
+              android:label="@string/app_name">
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    
+    </activity>
+
+    <service android:enabled="true" 
+             android:name=".MyService"></service>
+
+    <provider android:permission="com.paad.MY_PERMISSION" 
+              android:name=".MyContentProvider" 
+              android:enabled="true" 
+              android:authorities="com.paad.myapp.MyContentProvider"/>
+
+    <receiver android:enabled="true" 
+              android:label="My Broadcast Receiver" 
+              android:name=".MyBroadcastReceiver"/>
+
+  </application>
+
+  <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+
+  <permission android:name="com.paad.DETONATE_DEVICE" 
+              android:protectionLevel="dangerous" 
+              android:label="Self Destruct" 
+              android:description="@string/detonate_description"/>
+
+  <instrumentation android:name=".MyTestClass" 
+                   android:label="My Test" 
+                   android:targetPackage="com.paad.ch2manifesttest"/>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Emergency Responder</string>
+
+  <string name="respondAllClearButtonText">I am Safe and Well</string>
+  <string name="respondMaydayButtonText">MAYDAY! MAYDAY! MAYDAY!</string>
+
+  <string name="respondAllClearText">I am safe and well. Worry not!</string>
+  <string name="respondMaydayText">Tell my mother I love her.</string>
+
+  <string name="querystring">are you ok?</string>
+
+  <string name="user_preferences">com.paad.emergencyresponder.preferences</string>
+  <string name="includeLocationPref">PREF_INCLUDE_LOC</string>
+  <string name="responseTextPref">PREF_RESPONSE_TEXT</string>
+  <string name="autoRespondPref">PREF_AUTO_RESPOND</string>
+  <string name="respondForPref">PREF_RESPOND_FOR</string>
+</resources>

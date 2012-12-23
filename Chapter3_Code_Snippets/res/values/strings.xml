@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Ch2TestHarness</string>
+    <string name="stop_message_0">Stop.</string>
+    <string name="stop_message_1"><b>Stop.</b></string>
+    <string name="stop_message">&lt;b>Stop&lt;/b>. %1$s</string>
+    <string name="app_error">ERROR!</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, Chapter5</string>
+  <string name="app_name">Chapter 5 Test</string>
+  <string name="linkify_me">My number is 555-5555 and my website is www.helloworld.com, email me at test@gmail.com, check out quake1 not TEST.COM or !TEST.COM</string>
+  <string name="my_feed">http://earthquake.usgs.gov/eqcenter/catalogs/1day-M2.5.xml</string>
+</resources>

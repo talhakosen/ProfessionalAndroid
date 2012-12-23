@@ -1,0 +1,21 @@
+<resources>
+  <string-array name="respondForDisplayItems">
+    <item>- Disabled -</item>
+    <item>Next 5 minutes</item>
+    <item>Next 15 minutes</item>
+    <item>Next 30 minutes</item>
+    <item>Next hour</item>
+    <item>Next 2 hours</item>
+    <item>Next 8 hours</item>
+  </string-array>
+
+  <array name="respondForValues">
+    <item>0</item>
+    <item>5</item>
+    <item>15</item>
+    <item>30</item>
+    <item>60</item>
+    <item>120</item>
+    <item>480</item> 
+  </array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Ch2ManifestTest</string>
+    <string name="app_name">Chapter 2 Manifest Test</string>
+    <string name="detonate_description">Makes device go BOOM!</string>
+</resources>

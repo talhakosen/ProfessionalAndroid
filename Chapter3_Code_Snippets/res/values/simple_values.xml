@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">To Do List</string>
+  <color name="app_background">#FF0000FF</color>
+  <dimen name="default_border">5px</dimen>
+  <array name="default_todo_items">
+    <item>Item 1</item>
+    <item>Item 2</item>
+    <item>Item 3</item>
+  </array>
+  <array name="countdown">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+  </array>
+  
+</resources>

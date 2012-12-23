@@ -1,0 +1,53 @@
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/auto_update_prompt"
+  />
+  <CheckBox 
+    android:id="@+id/checkbox_auto_update"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"     
+  />
+  <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/update_freq_prompt"
+  />
+  <Spinner 
+    android:id="@+id/spinner_update_freq"        
+    android:layout_width="fill_parent"        
+    android:layout_height="wrap_content"       
+    android:drawSelectorOnTop="true"   
+  />
+  <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/min_quake_mag_prompt"
+  />
+  <Spinner 
+    android:id="@+id/spinner_quake_mag"        
+    android:layout_width="fill_parent"        
+    android:layout_height="wrap_content"       
+    android:drawSelectorOnTop="true"   
+  />
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Button android:id="@+id/okButton"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="@android:string/ok"
+    />
+    <Button android:id="@+id/cancelButton"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="@android:string/cancel"
+    />  
+  </LinearLayout>
+</LinearLayout>
