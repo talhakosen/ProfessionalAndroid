@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, CPA4AD_Ch03_NotListedActivity!</string>
+  <string name="detonate_description">CPA4AD_Ch03_NotListed</string>
+    <string name="settings_mi">Settings</string>
+      <string name="refresh_mi">Refresh</string>
+            <string name="stop_message">Stop.</string>
+      
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, CPA4AD_Ch05_IntentsActivity!</string>
+  <string name="app_name">CPA4AD_Ch05_Intents</string>
+  <string name="Nuke_From_Orbit">Nuke From Orbit</string>
+</resources>

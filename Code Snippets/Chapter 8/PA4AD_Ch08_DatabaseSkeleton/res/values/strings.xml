@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PA4AD_Ch08_DatabaseSkeletonActivity!</string>
+    <string name="app_name">PA4AD_Ch08_DatabaseSkeleton</string>
+    <string name="search_hint">Search elements</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">To Do List</string>
+  <plurals name="androidPlural">
+    <item quantity="one">One android</item>
+    <item quantity="other">%d androids</item>
+  </plurals>
+  <color name="app_background">#FF0000FF</color>
+  <dimen name="default_border">5dp</dimen>
+  <string-array name="string_array">
+    <item>Item 1</item>
+    <item>Item 2</item>
+    <item>Item 3</item>
+  </string-array>
+  <array name="integer_array">
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+  </array>
+</resources>

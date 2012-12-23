@@ -1,0 +1,11 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+  <header android:fragment="com.paad.preferences.MyPreferenceFragment"
+          android:icon="@drawable/preference_icon"
+          android:title="My Preferences"
+          android:summary="Description of these preferences" />
+  <header android:icon="@drawable/ic_settings_display"
+        android:title="Intent"
+        android:summary="Launches an Intent.">
+        <intent android:action="android.settings.DISPLAY_SETTINGS "/>
+  </header>
+</preference-headers>

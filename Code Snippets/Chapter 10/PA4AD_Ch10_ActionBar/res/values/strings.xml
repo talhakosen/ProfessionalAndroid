@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, ActionBarActivity!</string>
+  <string name="app_name">PA4AD_Ch10_Action_Bar</string>
+  <string name="menu_item">Menu Item</string>
+  <string name="menu_item_two">Menu Item 2</string>
+  <string name="menu_item_three">Menu Item 3</string>
+  <string name="action_item_title">Action Item Title</string>
+  <string name="action_view_title">Action View Title</string>
+  <string name="submenu_title">Sub Menu Title</string>
+  <string name="submenu_item">Sub Menu Item</string>
+</resources>

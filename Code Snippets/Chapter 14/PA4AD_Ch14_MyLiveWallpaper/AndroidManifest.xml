@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.paad.PA4AD_Ch14_MyWidget"
+  android:versionCode="1"
+  android:versionName="1.0">
+
+  <application 
+    android:icon="@drawable/icon" 
+    android:label="@string/app_name"
+    android.permission="android.permission.BIND_WALLPAPER">
+
+     <!-- Listing 14-35: Adding a Wallpaper Service to the manifest  -->
+    <service android:name=".MyWallpaperService">
+      <intent-filter>
+        <action android:name=
+          "android.service.wallpaper.WallpaperService" />
+      </intent-filter>
+      <meta-data
+        android:name="android.service.wallpaper"
+        android:resource="@xml/mylivewallpaper"
+      />
+    </service>
+    
+    <service android:name=".MyWallpaperSkeletonService">
+      <intent-filter>
+        <action android:name=
+          "android.service.wallpaper.WallpaperService" />
+      </intent-filter>
+      <meta-data
+        android:name="android.service.wallpaper"
+        android:resource="@xml/mylivewallpaperskeleton"
+      />
+    </service>
+    
+  </application>
+</manifest>

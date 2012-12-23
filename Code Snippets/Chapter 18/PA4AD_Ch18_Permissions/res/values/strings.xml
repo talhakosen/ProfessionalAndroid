@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, MyActivity!</string>
+  <string name="app_name">APA4AD_Ch18_Permissions</string>
+  <string name="detonate_description">Will cause the device to explode in a shower of flaming golden light.</string>
+</resources>

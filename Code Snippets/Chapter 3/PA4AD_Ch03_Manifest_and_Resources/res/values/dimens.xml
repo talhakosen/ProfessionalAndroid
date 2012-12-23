@@ -1,0 +1,4 @@
+
+    <resources>
+        <dimen name="standard_border">5dp</dimen>
+    </resources>

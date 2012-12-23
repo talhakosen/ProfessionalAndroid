@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="5dp">
+  <TextView 
+    android:layout_height="wrap_content" 
+    android:text="My Widget Activity" 
+    android:id="@+id/widget_text" 
+    android:layout_width="fill_parent"
+    android:padding="5dp"/>
+  <Button 
+    android:text="Force Widget Update" 
+    android:id="@+id/buttonRefresh" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+  />
+  <Button 
+    android:text="Schedule Widget Update Alarm" 
+    android:id="@+id/buttonAlarm" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+  />
+</LinearLayout>

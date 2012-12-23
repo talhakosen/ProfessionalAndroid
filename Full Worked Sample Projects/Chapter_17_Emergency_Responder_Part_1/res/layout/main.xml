@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView
+    android:id="@+id/labelRequestList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/querylistprompt"
+    android:layout_alignParentTop="true"
+  />
+  <LinearLayout
+    android:id="@+id/buttonLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_alignParentBottom="true">
+    <CheckBox
+      android:id="@+id/checkboxSendLocation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/includelocationprompt"/>
+    <Button
+      android:id="@+id/okButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/allClearButtonText"/>
+    <Button
+      android:id="@+id/notOkButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/maydayButtonText"/>
+    <Button
+      android:id="@+id/autoResponder"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/setupautoresponderButtonText"/>
+  </LinearLayout>
+  <ListView
+    android:id="@+id/myListView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/labelRequestList"
+    android:layout_above="@id/buttonLayout"/>
+</RelativeLayout>

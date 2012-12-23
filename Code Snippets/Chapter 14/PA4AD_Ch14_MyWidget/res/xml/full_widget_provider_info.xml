@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:initialLayout="@layout/full_widget_layout"
+  android:minWidth="72dp"
+  android:minHeight="146dp"
+  android:label="@string/full_widget_label"
+  android:updatePeriodMillis="3600000"
+  android:resizeMode="horizontal|vertical"
+  android:previewImage="@drawable/widget_preview"
+  android:configure=
+  "com.paad.PA4AD_Ch14_MyWidget.MyWidgetConfigurationActivity"
+/>

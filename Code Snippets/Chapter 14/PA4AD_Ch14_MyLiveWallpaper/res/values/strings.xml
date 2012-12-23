@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">My Widget</string>
+  <string name="full_widget_label">My Full Widget</string>
+  <string name="author">Reto Meier</string>
+  <string name="description">My Live Wallpaper</string>
+</resources>

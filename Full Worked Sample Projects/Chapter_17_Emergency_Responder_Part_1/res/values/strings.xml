@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Emergency Responder</string>
+  <string name="allClearButtonText">I am Safe and Well
+  </string>
+  <string name="maydayButtonText">MAYDAY! MAYDAY! MAYDAY!
+  </string>
+  <string name="setupautoresponderButtonText">Setup Auto Responder</string>
+  <string name="allClearText">I am safe and well. Worry not!
+  </string>
+  <string name="maydayText">Tell my mother I love her.
+  </string>
+  <string name="querystring">are you OK?</string>
+  <string name="querylistprompt">These people want to know if you\'re ok</string>
+  <string name="includelocationprompt">Include Location in Reply</string>
+</resources>

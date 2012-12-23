@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Check out the quake that occurred today at quake 1 and quake2 but not !quake3</string>
+  <string name="app_name">CPA4AD_Ch05_Linkify</string>
+</resources>

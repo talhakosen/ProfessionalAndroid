@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+        android:id="@+id/buttonRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autofocus" />
+
+    <Button
+        android:id="@+id/buttonStabilize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faces" />
+    
+        <Button
+        android:id="@+id/buttonScanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distances" />
+        
+                   </LinearLayout>
+    
+    <SurfaceView
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

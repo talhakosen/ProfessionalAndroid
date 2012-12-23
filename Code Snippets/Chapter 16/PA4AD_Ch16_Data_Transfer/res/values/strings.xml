@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, MyActivity!</string>
+  <string name="app_name">PA4AD_Ch16_Data_Transfer</string>
+  <string name="preference_title">My Network Preferences</string>
+</resources>

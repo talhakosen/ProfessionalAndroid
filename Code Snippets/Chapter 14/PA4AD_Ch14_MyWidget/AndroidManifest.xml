@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.paad.PA4AD_Ch14_MyWidget"
+  android:versionCode="1"
+  android:versionName="1.0">
+
+  <application android:icon="@drawable/icon" android:label="@string/app_name">
+        
+    <!-- Listing 14-4: App Widget manifest node 
+    <receiver android:name=".MyAppWidget" android:label="@string/widget_label">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/widget_provider_info"
+      />
+    </receiver>
+    -->
+    
+    <!-- Listing 14-13: Listening for Broadcast Intents within App Widgets  -->
+    <receiver android:name=".MyAppWidget"
+              android:label="@string/widget_label">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.paad.mywidget.FORCE_WIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/widget_provider_info"
+      />
+    </receiver>
+ 
+    <!-- Listing 14-17: App Widget configuration Activity manifest entry  -->
+    <activity android:name=".MyWidgetConfigurationActivity">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+ 
+    <!-- Listing 14-22: Adding a Remote Views Service to the manifest -->
+    <service android:name=".MyRemoteViewsService"
+             android:permission="android.permission.BIND_REMOTEVIEWS">
+    </service>
+ 
+    <activity android:name="com.paad.appwidgets.MyActivity"
+              android:label="@string/app_name">
+    </activity>
+
+    <receiver android:name=".FullAppWidget" android:label="@string/widget_label">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/full_widget_provider_info"
+      />
+    </receiver>
+    
+    <receiver android:name=".MyStackWidget" android:label="My 1Stack Widget">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/stack_widget_provider_info"
+      />
+    </receiver>
+    
+    <receiver android:name="com.paad.appwidgets.MyMediaStackWidget" android:label="My Media Stack Widget">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/media_stack_widget_provider_info"
+      />
+    </receiver>
+         
+    <service android:name="com.paad.appwidgets.MyMediaRemoteViewsService"
+             android:permission="android.permission.BIND_REMOTEVIEWS">
+    </service>
+  </application>
+</manifest>

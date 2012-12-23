@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="my_dropdown_values">
+    <item>100000</item>
+    <item>350000</item>
+    <item>500000</item>
+    <item>1000000</item>
+    <item>5000000</item>
+    <item>10000000</item>
+    <item>-1</item>
+  </string-array>
+</resources>

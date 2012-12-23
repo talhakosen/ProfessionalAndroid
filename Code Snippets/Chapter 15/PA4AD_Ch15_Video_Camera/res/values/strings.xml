@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, CameraActivity!</string>
+    <string name="app_name">PA4AD_Ch15_Camera</string>
+    
+    <bool name="supports_nfc_beam">true</bool>
+
+</resources>

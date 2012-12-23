@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="5dp">
+  <ImageView
+    android:id="@+id/widget_image_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon"
+  />
+  <ImageView
+    android:id="@+id/widget_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon"
+  />
+  <ImageButton
+    android:id="@+id/widget_image_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon"
+  />
+  <TextView 
+    android:id="@+id/widget_text_view" 
+    android:text="@string/widget_text" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"/>
+  <TextView 
+    android:id="@+id/widget_text" 
+    android:text="@string/widget_text" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"/>
+  <ProgressBar 
+    android:id="@+id/widget_progressbar" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+  />
+  <Chronometer 
+    android:id="@+id/widget_chronometer" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Listing 10-15: Defining a Menu Hierarchy in XML  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/action_item"
+    android:icon="@drawable/action_item_icon"
+    android:title="@string/action_item_title"
+    android:showAsAction="ifRoom">
+  </item>
+  <item
+    android:id="@+id/action_view_item"
+    android:icon="@drawable/action_view_icon"
+    android:title="@string/action_view_title"
+    android:showAsAction="ifRoom|collapseActionView"
+    android:actionLayout="@layout/my_action_view">
+  </item>
+  <item
+    android:id="@+id/action_provider_item"
+    android:title="Share"
+    android:showAsAction="always"
+    android:actionProviderClass="android.widget.ShareActionProvider">
+  </item>
+  <item
+    android:id="@+id/item02"
+    android:checkable="true" 
+    android:title="@string/menu_item_two">
+  </item>
+  <item
+    android:id="@+id/item03"
+    android:numericShortcut="3"
+    android:alphabeticShortcut="3"
+    android:title="@string/menu_item_three">
+  </item>
+  <item
+    android:id="@+id/item04"
+    android:title="@string/submenu_title">
+    <menu>
+      <item
+        android:id="@+id/item05"
+        android:title="@string/submenu_item">
+      </item>
+    </menu>
+  </item>
+</menu>
