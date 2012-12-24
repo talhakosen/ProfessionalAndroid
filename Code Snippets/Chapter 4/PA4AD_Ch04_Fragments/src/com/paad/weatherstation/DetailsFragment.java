@@ -2,6 +2,7 @@ package com.paad.weatherstation;
 
 import com.paad.fragments.R;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,8 +14,15 @@ public class DetailsFragment extends Fragment {
   public DetailsFragment() {
   }
 
-  // Called once the Fragment has been created in order for it to
-  // create its user interface.
+  Activity activity;
+	@Override
+	public void onAttach(Activity activity) {
+		// TODO Auto-generated method stub
+		super.onAttach(activity);
+		this.activity = activity;
+	}
+	
+
   @Override
   public View onCreateView(LayoutInflater inflater, 
                            ViewGroup container,

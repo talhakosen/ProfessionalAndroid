@@ -21,10 +21,12 @@ public void onCreate(Bundle savedInstanceState) {
     // If not, create and populate the layout.
     DetailsFragment detailsFragment = (DetailsFragment)fm.findFragmentById(R.id.details_container);
     
+    System.out.println("MyFragmentActivity.onCreate()");
+    
     if (detailsFragment == null) {
        FragmentTransaction ft = fm.beginTransaction(); 
-       ft.add(R.id.details_container, new DetailsFragment());
-       ft.add(R.id.ui_container, new MyListFragment());
+       ft.replace(R.id.details_container, new DetailsFragment());
+       ft.replace(R.id.ui_container, new MyListFragment());
        ft.commit();
      }
   }

@@ -21,4 +21,12 @@ public class DetailsFragment extends Fragment {
     // If this Fragment has no UI then return null.
     return inflater.inflate(R.layout.details_fragment, container, false);
   }
+  
+  
+  @Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		System.out.println("DetailsFragment.onCreate()");
+	}
 }

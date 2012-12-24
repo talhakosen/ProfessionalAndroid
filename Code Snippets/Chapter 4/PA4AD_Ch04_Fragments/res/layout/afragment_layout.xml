@@ -3,12 +3,14 @@
   android:orientation="horizontal"
   android:layout_width="match_parent"
   android:layout_height="match_parent">
+  
   <fragment android:name="com.paad.weatherstation.MyListFragment"
     android:id="@+id/my_list_fragment"
     android:layout_width="match_parent" 
     android:layout_height="match_parent" 
     android:layout_weight="1"
   />
+  
   <fragment android:name="com.paad.weatherstation.DetailsFragment"
     android:id="@+id/details_fragment"
     android:layout_width="match_parent" 
