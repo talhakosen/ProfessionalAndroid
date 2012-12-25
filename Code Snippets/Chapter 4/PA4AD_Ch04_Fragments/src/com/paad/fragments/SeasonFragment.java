@@ -8,28 +8,31 @@ import android.app.Fragment;
  */
 public class SeasonFragment extends Fragment {
 
-  public interface OnSeasonSelectedListener {
-    public void onSeasonSelected(Season season);
-  }
-    
-  private OnSeasonSelectedListener onSeasonSelectedListener;
-  private Season currentSeason;
+	public interface OnSeasonSelectedListener {
+		public void onSeasonSelected(Season season);
+	}
 
-  @Override
-  public void onAttach(Activity activity) {
-    super.onAttach(activity);
-      
-    try {
-      onSeasonSelectedListener = (OnSeasonSelectedListener)activity;
-    } catch (ClassCastException e) {
-      throw new ClassCastException(activity.toString() + 
-                " must implement OnSeasonSelectedListener");
-    }
-  }
+	private OnSeasonSelectedListener onSeasonSelectedListener;
+	private Season currentSeason;
 
-  private void setSeason(Season season) {
-    currentSeason = season;
-    onSeasonSelectedListener.onSeasonSelected(season);
-  }
-  
+	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+		try {
+			Season s = new Season();
+			s.s = "fragment";
+			onSeasonSelectedListener = (OnSeasonSelectedListener) activity;
+			setSeason(s);
+
+		} catch (ClassCastException e) {
+			throw new ClassCastException(activity.toString()
+					+ " must implement OnSeasonSelectedListener");
+		}
+	}
+
+	private void setSeason(Season season) {
+		currentSeason = season;
+		onSeasonSelectedListener.onSeasonSelected(season);
+	}
+
 }
