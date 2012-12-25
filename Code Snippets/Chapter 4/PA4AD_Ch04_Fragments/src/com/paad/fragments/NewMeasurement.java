@@ -8,30 +8,27 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 
-/**
- * MOVED TO PA4AD_Ch04_Seasons
- */
-public class SeasonFragment extends DialogFragment {
+public class NewMeasurement extends DialogFragment {
 
-	public interface OnSeasonSelectedListener {
-		public void onSeasonSelected(Season season);
+	public interface OnMeasurementSetListener {
+		public abstract void onMeasurementSet(Measurement measurement);
 	}
 
-	private OnSeasonSelectedListener onSeasonSelectedListener;
-	private Season currentSeason;
+	private OnMeasurementSetListener onMeasurementSetListener;
+	private Measurement currentMeasurement;
 
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		try {
-			Season s = new Season();
-			s.s = "fragment";
-			onSeasonSelectedListener = (OnSeasonSelectedListener) activity;
-			setSeason(s);
+			Measurement measurement = new Measurement();
+			measurement.s = "fragment";
+			onMeasurementSetListener = (OnMeasurementSetListener) activity;
+			setMeasurement(measurement);
 
 		} catch (ClassCastException e) {
 			throw new ClassCastException(activity.toString()
-					+ " must implement OnSeasonSelectedListener");
+					+ " must implement onMeasurementSetListener");
 		}
 	}
 
@@ -60,9 +57,9 @@ public class SeasonFragment extends DialogFragment {
 		return builder.create();
 	}
 
-	private void setSeason(Season season) {
-		currentSeason = season;
-		onSeasonSelectedListener.onSeasonSelected(season);
+	private void setMeasurement(Measurement measurement) {
+		currentMeasurement = measurement;
+		onMeasurementSetListener.onMeasurementSet(measurement);
 	}
 
 }

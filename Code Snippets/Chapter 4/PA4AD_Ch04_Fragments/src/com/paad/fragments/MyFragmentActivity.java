@@ -26,15 +26,13 @@ public class MyFragmentActivity extends Activity implements
 
 		// Check to see if the Fragment back stack has been populated
 		// If not, create and populate the layout.
-		DetailsFragment detailsFragment = (DetailsFragment) fm
-				.findFragmentById(R.id.details_container);
+		DetailsFragment detailsFragment = (DetailsFragment) fm.findFragmentById(R.id.details_container);
 
 		System.out.println("MyFragmentActivity.onCreate()");
 
 		if (detailsFragment == null) {
-			SeasonFragment s = new SeasonFragment();
-
-			FragmentTransaction ft = fm.beginTransaction();
+			FragmentTransaction ft = fm.beginTransaction();			
+			ft.add(new SeasonFragment(),"sF");
 			ft.replace(R.id.details_container, new DetailsFragment());
 			ft.replace(R.id.ui_container, new MyListFragment());
 			ft.commit();
